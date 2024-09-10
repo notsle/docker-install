@@ -551,7 +551,7 @@ do_install() {
 			echo_docker_as_nonroot
 			exit 0
 			;;
-		centos|fedora|rhel)
+		centos|fedora|rhel|nobara)
 			if command_exists dnf; then
 				pkg_manager="dnf"
 				pkg_manager_flags="--best"
